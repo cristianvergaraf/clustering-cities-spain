@@ -13,8 +13,8 @@ url:              https://cristianvergaraf.github.io/CristianVergaraFernandez_Po
 baseurl:          "/"
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name: 'Mark Otto'
+  url: https://twitter.com/mdo
 
 paginate:         5
 
@@ -28,7 +28,7 @@ plugins:
 
 
 # Custom vars
-version:          2.1.0
+version: 2.1.0
 
 github:
   repo:           https://github.com/poole/hyde
