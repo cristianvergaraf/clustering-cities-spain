@@ -10,7 +10,7 @@ title:            CLUSTER
 tagline:          'UNSUPERVISED ANALYSIS'
 description:      'UNSUPERVISED ANALYSIS'
 url:              https://cristianvergaraf.github.io/CristianVergaraFernandez_Portfolio/   # Update with your actual site URL
-baseurl:          "/"
+baseurl:          ""
 
 author:
   name: 'Mark Otto'
