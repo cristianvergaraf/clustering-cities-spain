@@ -3,6 +3,12 @@ layout: page
 title: Finding pattern in Spanish cities
 ---
 
+## Take home message 
+
+* Classification of cities may be possible based on land use, spatial configuration and socioeconomic data
+
+* Cities with more than 100000 do not show characteristic of monofuncionality, such characteristic may be found in smaller cities
+
 ### Classification of cities
 
 Cities with more than 100.000 inhabitants can be classify in 5 different groups based on land use, spatial configuration and socioeconomic fetures. This groups are:
@@ -11,12 +17,11 @@ Cities with more than 100.000 inhabitants can be classify in 5 different groups 
 
 - Small and monofunctional cities
 
-- Embrionaries cities.
+- Embrionaries cities
 
 - Transition
 
-- Large and costal cities.
-
+- Large and costal cities
 
 #### Technical knowledge 
 
@@ -46,7 +51,7 @@ Find groups of Spanish cities with more than 100,000 inhabitants based on land u
 
 Using the Cadastre classification plug in we download the spatial and attribute data for Spanish cities with more than 100.000 inhabitants.
 
-#### Classification 
+<h2> <a href = 'https://github.com/cristianvergaraf/clustering-cities-spain/blob/main/calculo_porcentaje_uso_ciudades.ipynb'> Classification </a> </h2>
 
 Cities were classified using the tool of the cadastre plug in of QGIS in 12 diferent land uses.
 
@@ -54,14 +59,15 @@ Cities were classified using the tool of the cadastre plug in of QGIS in 12 dife
 
 Socioeconomic data was obtained from X for each cities. Using python a new dataset with data of interest for each city was created. All different source of data were join using sql operations in pandas.
 
-#### Exploratory data analysis
+<h3>Exploratory data analysis</h3>
 
-Features were scaled using three different methods, MinMax, StandardScaler, and PowerTransformation of the sklearn library in Python. Additionaly, a function applied to the features allowed to find outliers using the criterio of the 1.5 Interquartil range.
+Features were <a href = 'https://github.com/cristianvergaraf/clustering-cities-spain/blob/main/escalar_variables.ipynb'>scaled </a> using three different methods, MinMax, StandardScaler, and PowerTransformation of the sklearn library in Python. Additionaly, a function applied to the features allowed to find outliers using the criterio of the 1.5 Interquartil range.
 
-#### Factor Analysis
+<h4><a href = "https://github.com/cristianvergaraf/clustering-cities-spain/blob/main/function_search_FA_parameters.R"> Factor Analysis</a></h4>
+
 
 Factor analysis applied to reduce the dimensionality and get new variables that could explained most of the variance of the data, also this new variables could be interpreted to
-facilitate the understanding of structure. Iterative factor analysis were made using the PSYCH library in R, simulating the grid_search function of sklearn to find the optimal solution for the parameters of the Factor analysis (number of factors, rotation, minres). Solution with best structure meaning high explanation, low communality.
+facilitate the understanding of structure. Iterative factor analysis were made using the PSYCH library in R, a <a href = 'https://github.com/cristianvergaraf/clustering-cities-spain/blob/main/function_search_FA_parameters.R'> function </a> was created to test the combination of different parameters to find the optimal solution for the Factor analysis (number of factors, rotation, minres). Solution with best structure meaning high explanation, low communality.
 
 ### Cluster analysis
 
