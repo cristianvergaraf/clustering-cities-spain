@@ -18,7 +18,7 @@ Cities with more than 100.000 inhabitants can be classify in 5 different groups 
 - Large and costal cities.
 
 
-### Technical knowledge 
+#### Technical knowledge 
 
 - Processing spatial data iteratively using Python (Geopandas).
 
@@ -32,7 +32,7 @@ Cities with more than 100.000 inhabitants can be classify in 5 different groups 
 
 - Evaluating the best combination of parameters to find optimal solution for hierarchical clustering using Silhouette as evaluation metric.
 
-### Objetive
+#### Objetive
 
 Find groups of Spanish cities with more than 100,000 inhabitants based on land use, spatial configuration of patches, and socioeconomic data. 
 
@@ -54,11 +54,11 @@ Cities were classified using the tool of the cadastre plug in of QGIS in 12 dife
 
 Socioeconomic data was obtained from X for each cities. Using python a new dataset with data of interest for each city was created. All different source of data were join using sql operations in pandas.
 
-### Exploratory data analysis
+#### Exploratory data analysis
 
 Features were scaled using three different methods, MinMax, StandardScaler, and PowerTransformation of the sklearn library in Python. Additionaly, a function applied to the features allowed to find outliers using the criterio of the 1.5 Interquartil range.
 
-### Factor Analysis
+#### Factor Analysis
 
 Factor analysis applied to reduce the dimensionality and get new variables that could explained most of the variance of the data, also this new variables could be interpreted to
 facilitate the understanding of structure. Iterative factor analysis were made using the PSYCH library in R, simulating the grid_search function of sklearn to find the optimal solution for the parameters of the Factor analysis (number of factors, rotation, minres). Solution with best structure meaning high explanation, low communality.
